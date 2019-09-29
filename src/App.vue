@@ -3,6 +3,8 @@
   <div class="container">
     <Slide>
       <router-link class="menu-link" to="/livros">Livros</router-link>
+      <router-link class="menu-link" to="/emprestimos-ativos">Empréstimos Ativos</router-link>
+      <router-link class="menu-link" to="/emprestimos">Histórico de Empréstimos</router-link>
     </Slide>
     <router-view/>
   </div>
