@@ -75,7 +75,7 @@ module.exports = {
 		okClassModalEntity: 'btn btn-primary btn-modal btn-ok-modal',
 		options: '{}',
 		hideSearch: 'false',
-		isCompact: 'false',
+		isCompact: 'true',
 		hideLastAttr: 'false',
 		classLine: '[]',
 		customRemove: 'false',

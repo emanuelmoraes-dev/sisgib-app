@@ -311,7 +311,7 @@ export default {
 
 		isCompact: {
 			type: Boolean,
-			default: false
+			default: true
 		},
 
 		hideLastAttr: {
