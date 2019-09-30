@@ -31,46 +31,41 @@ export default class DefaultHttp extends Http {
 
 	async requestGet (url, options = {}) {
 		return super.requestGet(url, options)
-			.catch(err => {
-				if (err.response.status === 401)
-					this.login('e072dcc5-d2aa-4e87-ac2e-80c1af8305f2', '6fdd7070-cc8b-43f6-8e42-fc9ed0eea5cc')
-						.then(() => super.requestGet(url, options))
+			.catch(() => {
+				this.login('e072dcc5-d2aa-4e87-ac2e-80c1af8305f2', '6fdd7070-cc8b-43f6-8e42-fc9ed0eea5cc')
+					.then(() => super.requestGet(url, options))
 			})
 	}
 
 	async requestPost (url, body, options = {}) {
 		return super.requestPost(url, body, options)
-			.catch(err => {
-				if (err.response.status === 401)
-					this.login('e072dcc5-d2aa-4e87-ac2e-80c1af8305f2', '6fdd7070-cc8b-43f6-8e42-fc9ed0eea5cc')
-						.then(() => super.requestPost(url, body, options))
+			.catch(() => {
+				this.login('e072dcc5-d2aa-4e87-ac2e-80c1af8305f2', '6fdd7070-cc8b-43f6-8e42-fc9ed0eea5cc')
+					.then(() => super.requestPost(url, body, options))
 			})
 	}
 
 	async requestPut (url, body, options = {}) {
 		return super.requestPut(url, body, options)
-			.catch(err => {
-				if (err.response.status === 401)
-					this.login('e072dcc5-d2aa-4e87-ac2e-80c1af8305f2', '6fdd7070-cc8b-43f6-8e42-fc9ed0eea5cc')
-						.then(() => super.requestPut(url, body, options))
+			.catch(() => {
+				this.login('e072dcc5-d2aa-4e87-ac2e-80c1af8305f2', '6fdd7070-cc8b-43f6-8e42-fc9ed0eea5cc')
+					.then(() => super.requestPut(url, body, options))
 			})
 	}
 
 	async requestPatch (url, body, options = {}) {
 		return super.requestPatch(url, body, options)
-			.catch(err => {
-				if (err.response.status === 401)
-					this.login('e072dcc5-d2aa-4e87-ac2e-80c1af8305f2', '6fdd7070-cc8b-43f6-8e42-fc9ed0eea5cc')
-						.then(() => super.requestPatch(url, body, options))
+			.catch(() => {
+				this.login('e072dcc5-d2aa-4e87-ac2e-80c1af8305f2', '6fdd7070-cc8b-43f6-8e42-fc9ed0eea5cc')
+					.then(() => super.requestPatch(url, body, options))
 			})
 	}
 
 	async requestDelete (url, options = {}) {
 		return super.requestDelete(url, options)
-			.catch(err => {
-				if (err.response.status === 401)
-					this.login('e072dcc5-d2aa-4e87-ac2e-80c1af8305f2', '6fdd7070-cc8b-43f6-8e42-fc9ed0eea5cc')
-						.then(() => super.requestDelete(url, options))
+			.catch(() => {
+				this.login('e072dcc5-d2aa-4e87-ac2e-80c1af8305f2', '6fdd7070-cc8b-43f6-8e42-fc9ed0eea5cc')
+					.then(() => super.requestDelete(url, options))
 			})
 	}
 }
