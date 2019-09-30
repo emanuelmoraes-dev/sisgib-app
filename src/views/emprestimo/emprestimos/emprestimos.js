@@ -2,5 +2,12 @@ import listarEmprestimos from '@/components/listar-emprestimos/listar-emprestimo
 
 export default {
 	name: 'emprestimos',
-	components: { listarEmprestimos }
+
+	components: { listarEmprestimos },
+
+	methods: {
+		onError (err) {
+			console.error(err)
+		}
+	}
 }

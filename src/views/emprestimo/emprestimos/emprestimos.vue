@@ -2,7 +2,7 @@
 <div class="wrapper-emprestimos">
 	<div class="row">
 		<div class="col">
-			<listar-emprestimos></listar-emprestimos>
+			<listar-emprestimos @on_error="onError"></listar-emprestimos>
 		</div>
 	</div>
 </div>

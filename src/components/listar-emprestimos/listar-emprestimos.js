@@ -92,7 +92,7 @@ export default {
 		definitions: {
 			type: Object,
 			default: () => definitionAdapter({
-				dateEmprestimo: {
+				dataEmprestimo: {
 					type: Date,
 					sort: 1,
 					optionSearch: 'Data do Empréstimo',

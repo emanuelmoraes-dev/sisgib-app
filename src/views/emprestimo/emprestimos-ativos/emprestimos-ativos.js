@@ -9,7 +9,7 @@ export default {
 	data () {
 		return {
 			definitions: definitionAdapter({
-				dateEmprestimo: {
+				dataEmprestimo: {
 					type: Date,
 					sort: 1,
 					optionSearch: 'Data do Empréstimo',
@@ -63,8 +63,18 @@ export default {
 	},
 
 	methods: {
-		onError(err) {
+		onError (err) {
 			console.error(err)
+		},
+
+		entityView (entity, index) {
+			this.$refs.listarEmprestimos.getListEntities().entityView(entity, index)
+		},
+
+		async devolverLivro (entity, index) {
+			this.$set(entity, 'ativo', false)
+			await this.$req.emprestimo.edit(entity)
+			this.$refs.listarEmprestimos.getListEntities().search()
 		}
 	}
 }
