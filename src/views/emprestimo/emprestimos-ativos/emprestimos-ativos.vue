@@ -17,10 +17,10 @@
 			>
 				<div class="text-center" slot="td_option" slot-scope="{ entity, index }">
 					<button type="button" class="btn btn-warning option option-icon" @click.prevent.stop="entityView(entity, index)" data-toggle="tooltip" data-placement="top" title="Visualizar Livro">
-						<i class="fa fa-eye"></i>
+						<i class="far fa-eye"></i>
 					</button>
 					<button type="button" class="btn btn-success option option-icon" @click.prevent.stop="devolverLivro(entity, index)" data-toggle="tooltip" data-placement="top" title="Devolver Livro">
-						<i class="fa fa-book"></i>
+						<i class="far fa-bookmark"></i>
 					</button>
 				</div>
 			</listar-emprestimos>
