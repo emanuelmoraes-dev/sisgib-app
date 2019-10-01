@@ -16,7 +16,7 @@
     "jquery": "^3.4.1",
     "js-cookie": "^2.2.1",
     "jwt-decode": "^2.2.0",
-    "list-entities-vue": "^1.3.4",
+    "list-entities-vue": "^1.4.1",
     "request-list-entities-vue-alpha-restful": "^1.2.2",
     "vue": "^2.6.10",
     "vue-burger-menu": "^2.0.2",

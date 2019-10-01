@@ -1,5 +1,6 @@
 import 'list-entities-vue/assets/css/vuestic.css'
 import 'list-entities-vue/assets/css/style.css'
+import 'list-entities-vue/lib/fontawesome/css/all.min.css'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
